@@ -1,0 +1,21 @@
+{
+  "name": "electron-app",
+  "scripts": {
+    "dev": "concurrently yarn:dev:*",
+    "dev:react": "vite serve src",
+    "dev:electron": "electronmon ."
+  },
+  "main": "src/main.js",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "electron": "^19.0.3",
+    "electronmon": "^2.0.2",
+    "vite": "^2.9.9"
+  },
+  "private": true
+}
